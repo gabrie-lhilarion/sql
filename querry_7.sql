@@ -98,4 +98,4 @@ SELECT DISTINCT name FROM actor a, casting c
 where id = actorid
 and movieid IN(SELECT ca.movieid
 FROM actor ac, casting ca
-where actorid=id and name = 'Art Garfunkel') AND a.name != 'Art Garfunkel';
+where actorid=id and name = 'Art Garfunkel' AND a.name != 'Art Garfunkel';
